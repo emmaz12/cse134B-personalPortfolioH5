@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Emma's Portfolio</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="./global.css"></link>
+        <meta charset="UTF-8">
+        <meta name="description" content="Emma's personal portfolio website">
+        <meta name="keywords" content="portfolio, resume, recruiter, personal website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script></script>
+    </head>
+    <body>
+        <div class = "wrapper">
+            <noscript>
+                This website requires JavaScript to display the light/dark mode button
+                <style>
+                    #toggle {
+                    display: none;
+                    }
+                </style>
+            </noscript>
+            <header id = "header">
+                <nav>
+                    <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+                    <div class="nav-links">
+                        <a href="./index.html">About Me</a>
+                        <a href="./pages/education.html">Education</a>
+                        <a href="./pages/internships.html">Internships & Projects</a>
+                        <a href="./pages/extracurriculars.html">Extracurricular Activities</a>
+                        <a href="./pages/hobbies.html">Hobbies & Interests</a>
+                    </div>
+                    <button id = "toggle">🌙</button>
+                </nav>
+            </header>
+            
+            <main>
+                <section class = "intro">
+                    <div class = "intro-text">
+                        <h1>
+                            Hi! I'm Emma
+                        </h1>
+                        <h2>
+                            Welcome to my personal website!
+                        </h2>
+                    </div>
+                    <img srcset="./static/assets/headshot-lowres.jpg 1x, ./static/assets/headshot-highres.jpg 2x" height="500" width="250" alt = "headshot">
+                </section>
+                <h3>
+                    More about me!
+                </h3>
+                <div class = 'bio'>
+                    <p>
+                        Hey, I’m Emma! I’m a junior at UC San Diego studying computer engineering, originally from Alberta, Canada. 
+                        I’ve always been passionate about software development and love diving into both front-end and back-end work. 
+                        Right now, I’m working on multiple full-stack projects, constantly learning new technologies and finding ways 
+                        to improve my skills. I enjoy the problem-solving side of coding—whether it’s designing intuitive user 
+                        interfaces, optimizing backend performance, or figuring out how different systems work together. 
+                    </p>
+                    <p>
+                        Outside of coding, I love crocheting, especially making fun and cozy projects in my free time. 
+                        I’m also a big fan of binge-watching Netflix, whether it’s a new thriller series or a feel-good sitcom. 
+                        Staying active is important to me too—I enjoy doing Pilates to unwind and playing volleyball whenever 
+                        I get the chance. I’m always up for trying new things, whether it’s learning a new framework, 
+                        picking up a new hobby, or just taking on a new challenge.
+                    </p>
+                </div>
+                <hr>
+                <div class = 'resume'>
+                    <h1>
+                        Resume
+                    </h1>
+                    <iframe src="./static/assets/resume.jpg" title="Resume" height="960" width="742">
+                    </iframe>
+                </div>
+                
+            </main>
+            <footer id = "footer">
+                <a href="./pages/contactMe.html">Contact Me!</a>
+                <address>
+                    Developed by Emma Zhu<br> 
+                    San Diego, CA<br>
+                </address>
+            </footer>
+        </div>
+        <script src="./static/js/toggleMode.js"></script>
+    </body>
+</html>

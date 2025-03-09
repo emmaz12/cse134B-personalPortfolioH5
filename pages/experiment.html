@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Experiments</title>
+        <style>
+            fancy-card {
+                display: block;
+                border: 2px solid #333;
+                border-radius: 10px;
+                padding: 20px;
+                background: linear-gradient(135deg, #9ad3ff, #c4f5fa);
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+                font-family: Arial, sans-serif;
+                max-width: 300px;
+                text-align: center;
+                margin: 20px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <aside>
+            This is the experiments page in order to use all the given tags for
+            this project in CSE 134B.
+        </aside>
+
+
+        <header>
+            <h3>Search Bar example</h1>
+            <search>
+              <form action="./search/">
+                <input type="search" id="experiments" name="q">
+                <button type="submit">Search</button>
+              </form>
+            </search>
+        </header>
+
+       
+        <hr>
+
+        <fancy-card>
+            <h2>Custom Card</h2>
+            <p>This is a semantic CSS custom element that provides a reusable, structured content block.
+                The name "fancy-card" conveys its purpose—it is a visually styled container meant to hold content 
+                in a card-like format. Instead of using div class="card", this element provides a self-explanatory 
+                way to define a card component.
+            </p>
+        </fancy-card>
+
+        <hello-world></hello-world>
+
+        <script>
+            class HelloWorld extends HTMLElement {
+                connectedCallback() {
+                    console.log("Hello World!")
+                }
+            }
+            customElements.define('hello-world', HelloWorld);
+        </script>
+
+        <hr>
+
+        <code>
+            //this is an example of the code snippet:<br>
+            console.log("welcome to the experiments pages")
+        </code>
+
+        <p>This is an example of the audio tag playing sounds of water</p>
+        <audio controls>
+            <source src="../static/assets/water.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <pre>This is an example of the pre tag.   Spaces and 
+            new lines are preserved.
+        </pre>
+
+        <p>Press <kbd>Cmd</kbd> + <kbd>X</kbd> to copy then delete text</p>
+
+        <label>Choose a city:</label>
+        <select >
+        <optgroup label="North America">
+            <option value="NYC">NYC</option>
+            <option value="San Diego">San Diego</option>
+            <option value="Toronto">Toronto</option>
+        </optgroup>
+        <optgroup label="Europe">
+            <option value="Italy">Italy</option>
+            <option value="Paris">Paris</option>
+        </optgroup>
+        <optgroup label="Asia">
+            <option value="Taiwan">Taiwan</option>
+            <option value="Hong Kong">Hong Kong</option>
+        </optgroup>
+        </select>
+
+        <label>Choose your favorite color:</label>
+        <input list="colors" >
+
+        <datalist id="colors">
+        <option value="Blue">
+        <option value="Pink">
+        <option value="Purple">
+        <option value="Red">
+        <option value="Yellow">
+        </datalist>
+
+        <br>
+
+        <canvas id="canvas">
+            Your browser does not support the canvas tag.
+            </canvas>
+            
+            <script>
+            let canvas = document.getElementById("canvas");
+            let ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.beginPath();
+            ctx.arc(100, 100, 40, 0, Math.PI * 2);
+            ctx.fill();
+        </script>
+
+        <template>
+            <div>
+                <h1>template header</h1>
+                <p>template content</p>
+            </div>
+        </template>
+
+        <hr>
+
+        <math>
+            <mi>E</mi>
+            <mo>=</mo>
+            <mi>m</mi>
+            <msup>
+              <mi>c</mi>
+              <mn>2</mn>
+            </msup>
+        </math>
+
+    </body>
+</html>

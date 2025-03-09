@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="./contact.css"></link>
+        <link rel="stylesheet" href="../global.css"></link>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Contact</h1>
+
+        <table id = "table">
+            <caption>Connect with me!</caption>
+            <colgroup>
+                <col span="2">
+            </colgroup>
+            <tr>
+                <th><img src="../static/assets/email.png" height="72" width="80" alt="emailIcon"></th>
+                <td><a href="mailto:emzhu@ucsd.edu">Email</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <svg height="72" viewBox="0 0 72 72" width="72" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" fill-rule="evenodd">
+                            <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" fill="#007EBB"/>
+                            <path d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z" fill="#FFF"/>
+                        </g>
+                    </svg>
+                </td>
+                <td><a href="https://www.linkedin.com/in/emma-jzhu/">LinkedIn</a></td>
+            </tr>
+            <tr>
+                <td><img src="../static/assets/github.png" height="72" width="110" alt="githubLogo"></td>
+                <td><a href="https://github.com/emmaz12">Github</a></td>
+            </tr>
+        </table>
+
+        <form action="https://httpbin.org/post" method="post" id = "contactForm">
+            <legend>Contact Me!</legend>
+    
+            <label for="name">(Required) Name: </label>
+            <input type="text" name = "name" id = "name" required minlength="2">
+    
+            <label for ="formSelect">(Required) I want to: </label>
+            <select name="formSelect" id="formSelect" required>
+                <option value="question">Ask a question</option>
+                <option value="comment">Leave a comment</option>
+                <option value="feedback">Provide feedback</option>
+                <option value="other">Other</option>
+            </select>
+    
+            <label for="comments">(Required) Leave a message!</label>
+            <small>Max 100 characters. Only letters, numbers, and punctuation.</small>
+            <textarea id="comments" name="comments" required pattern="^[a-zA-Z0-9!., ]+$" maxlength="100"></textarea>
+            <small id = "charCount"></small>
+    
+            <label for="email">Leave your email for a response: </label>
+            <input type="email" name = "email" id = "email" minlength="2">
+    
+            <input type="hidden" name="possible_bot" value="true">
+            <input type="hidden" name="form-errors" id="formErrors">
+            <button type="submit">Submit</button>
+
+
+            <output id="errorOutput"></output>
+            <output id="infoOutput"></output>
+        </form>
+        <script src="../static/js/contactForm.js"></script>
+        <script src="../static/js/toggleMode.js"></script>
+    </body>
+</html>

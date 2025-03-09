@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<body>
+    <form action="https://httpbin.org/post" method="post">
+        <legend>Contact Me!</legend>
+
+        <label for="name">Name: </label>
+        <input type="text" name = "name" id = "name" required minlength="2">
+
+        <label for ="formSelect">I want to: </label>
+        <select name="formSelect" id="formSelect" required>
+            <option value="question">Ask a question</option>
+            <option value="comment">Leave a comment</option>
+            <option value="feedback">Provide feedback</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="comments">Leave a message!</label>
+        <input id="comments" name="comments" required maxlength="100" pattern="^[a-zA-Z0-9!., ]+$">
+        <small>Max 500 characters. Only letters, numbers, and punctuation.</small>
+
+        <label for="email">Leave your email for a response: </label>
+        <input type="email" name = "email" id = "email" required minlength="2">
+
+        <input type="hidden" name="possible_bot" value="true">
+
+        <button type="submit">Submit</button>
+        <output id="errorOutput"></output>
+        <output id="infoOutput"></output>
+    </form>
+</body>
