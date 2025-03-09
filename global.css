@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #f1f7fe;
+    --primary-color-alt: #d6edff; 
+    --nav-color: color(display-p3 0.73 0.89 1);
+    --hover-color: color-mix(in srgb, rgb(60, 176, 214) 50%, rgb(0, 100, 150) 50%);
+    --dark-primary-color: #11232f ;
+    --dark-primary-color-alt: #273543; 
+    
+    /* Fonts with fallback */
+    --font-main: 'Source Sans Pro', Arial, sans-serif;
+    
+    --spacing: 2rem;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--primary-color, white), var(--primary-color-alt, white)); 
+    font-family: var(--font-main, 'Arial');
+    margin: 0.5rem 2.5rem;
+    padding: 0;
+}
+
+.darkMode {
+    background: linear-gradient(to bottom, var(--dark-primary-color, white), var(--dark-primary-color-alt, white)); 
+    color: white
+}
+
+.darkModeSubsection {
+    background: #80aac9 ;
+    color: white;
+}
+
+/*index - header, footer, section, body, toggle*/
+/*education - body*/
+/*internship - sections, body*/
+/*extracurricular - body, sections*/
+/*hobby - body, sections*/
+/*contact - body, table, form*/
