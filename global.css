@@ -31,9 +31,33 @@ body {
     color: white;
 }
 
-/*index - header, footer, section, body, toggle*/
-/*education - body*/
-/*internship - sections, body*/
-/*extracurricular - body, sections*/
-/*hobby - body, sections*/
-/*contact - body, table, form*/
+header {
+    background: var(--nav-color, blue);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: max-content;
+    align-items: center;
+    margin: auto;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-family: var(--font-main, 'Arial');
+    font-size: 1.1rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: white;
+    background-color: var(--hover-color, blue);
+}
