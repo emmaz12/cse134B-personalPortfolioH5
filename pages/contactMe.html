@@ -7,6 +7,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <header id = "header" style="padding:1.5rem;">
+            <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+            <nav>
+                <div class="nav-links">
+                    <a href="../index.html">About Me</a>
+                    <a href="../pages/education.html">Education</a>
+                    <a href="../pages/internships-cards.html">Internships & Projects</a>
+                    <a href="../pages/extracurriculars.html">Extracurricular Activities</a>
+                    <a href="../pages/hobbies.html">Hobbies & Interests</a>
+                </div>
+            </nav>
+        </header>
         <h1>Contact</h1>
 
         <table id = "table">
@@ -59,7 +71,7 @@
     
             <input type="hidden" name="possible_bot" value="true">
             <input type="hidden" name="form-errors" id="formErrors">
-            <button type="submit">Submit</button>
+            <button type="submit" class = "submit">Submit</button>
 
 
             <output id="errorOutput"></output>
@@ -67,5 +79,6 @@
         </form>
         <script src="../static/js/contactForm.js"></script>
         <script src="../static/js/toggleMode.js"></script>
+        <script src="../static/js/hamburger.js"></script>
     </body>
 </html>
