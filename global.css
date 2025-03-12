@@ -71,6 +71,18 @@ nav a:hover {
     padding: 0.5rem 1rem;
 }
 
+footer {
+    background: var(--nav-color, blue);
+    color: black;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
 /* Small Screens (Phones - max 600px) */
 @media (max-width: 600px) {
 
