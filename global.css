@@ -42,7 +42,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    max-width: max-content;
+    width: max-content;
     align-items: center;
     margin: auto;
 }
@@ -81,6 +81,17 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+}
+
+footer a {
+    color: darkblue; 
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white; 
+    text-decoration: underline;
 }
 
 /* Small Screens (Phones - max 600px) */

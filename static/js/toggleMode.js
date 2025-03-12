@@ -54,6 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
     
             localStorage.setItem("theme", isDarkMode ? "dark" : "light");
             toggleButton.textContent = isDarkMode ? "☀️" : "🌙";
+
+        location.reload()
         });
     }
 });
